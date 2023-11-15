@@ -48,13 +48,14 @@ cd /usr/share/svxlink/sounds
 wget https://github.com/sm0svx/svxlink-sounds-en_US-heather/releases/download/19.09/svxlink-sounds-en_US-heather-16k-19.09.tar.bz2 --no-check-certificate
 
 tar xvjf svxlink-sounds-en_US-heather-16k-19.09.tar.bz2
-#ln -s en_US-heather-16k/ en_US
+ln -s en_US-heather-16k/ en_US
+rm xvjf svxlink-sounds-en_US-heather-16k-19.09.tar.bz2
 
 # Download audio file it_IT
 git clone https://github.com/IU4QRW/svxlink-sounds-it_IT.git
-#ln -s svxlink-sounds-it_IT/ it_IT
+ln -s svxlink-sounds-it_IT/ it_IT
 
-ln -s svxlink-sounds-it_IT/ en_US
+#ln -s svxlink-sounds-it_IT/ en_US
 
 # Update with logrotare
 cat > /etc/logrotate.d/svxlink <<EOF
